@@ -2,8 +2,8 @@
 .NET 3.5 library for SmartPayment POS driver integration
 
 
-*Created with Visual Studio 16.3 and target the .NET 3.5 Framework*
-*It depends on RestSharp and Newtonsoft.Json*
+*Created with Visual Studio 16.3 and target the .NET 3.5 Framework*, 
+*and it depends on RestSharp and Newtonsoft.Json*
 
 
 **Examples**:
