@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B8ABF47-982C-4D43-8D35-86CE68AC371E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartPaymentClientNet</RootNamespace>
+    <AssemblyName>SmartPaymentClientNet35</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.105.2.3\lib\net35\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JsonUtils.cs" />
+    <Compile Include="Model\About.cs" />
+    <Compile Include="Model\AccessLog.cs" />
+    <Compile Include="Model\ApplicationLog.cs" />
+    <Compile Include="Model\CashBackRequest.cs" />
+    <Compile Include="Model\CashBackResponse.cs" />
+    <Compile Include="Model\Device.cs" />
+    <Compile Include="Model\DeviceInfo.cs" />
+    <Compile Include="Model\DeviceType.cs" />
+    <Compile Include="Model\DeviceWithStatus.cs" />
+    <Compile Include="Model\DeviceWithValidation.cs" />
+    <Compile Include="Model\GeneralRequest.cs" />
+    <Compile Include="Model\GeneralResponse.cs" />
+    <Compile Include="Model\SaleDetailsResponse.cs" />
+    <Compile Include="Model\SaleOfflineSyncResponse.cs" />
+    <Compile Include="Model\SaleCompletionRequest.cs" />
+    <Compile Include="Model\SalePreauthorizationRequest.cs" />
+    <Compile Include="Model\SaleRequest.cs" />
+    <Compile Include="Model\SaleResponse.cs" />
+    <Compile Include="Model\SaleSummaryResponse.cs" />
+    <Compile Include="Model\SaleVoidRequest.cs" />
+    <Compile Include="Model\SettlementRequest.cs" />
+    <Compile Include="Model\SettlementResponse.cs" />
+    <Compile Include="Model\SmartPaymentException.cs" />
+    <Compile Include="Model\WebService.cs" />
+    <Compile Include="Model\WebServiceError.cs" />
+    <Compile Include="SmartPaymentClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
