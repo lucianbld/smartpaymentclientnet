@@ -5,6 +5,7 @@
 *Created with Visual Studio 16.3 and target the .NET 3.5 Framework*, 
 *and it depends on RestSharp and Newtonsoft.Json*
 
+##Rest API Documentation: https://www.smartpayment.ro/docs
 
 **Examples**:
 
