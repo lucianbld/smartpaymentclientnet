@@ -6,7 +6,7 @@ Created with Visual Studio 16.3 and target the .NET 3.5 Framework.
 It depends on RestSharp and Newtonsoft.Json
 
 
-**Sale example**:
+**Examples**:
 
 ```c#
   try
