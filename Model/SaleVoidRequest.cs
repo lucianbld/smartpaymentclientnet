@@ -11,6 +11,9 @@ namespace SmartPaymentClientNet.Model
         [JsonProperty(PropertyName = "amount")]
         public decimal Amount { get; set; }
 
+        [JsonProperty(PropertyName = "currencyName")]
+        public string CurrencyName { get; set; }
+
         [JsonProperty(PropertyName = "receiptNumber")]
         public int ReceiptNumber { get; set; }
 

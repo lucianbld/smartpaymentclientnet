@@ -90,9 +90,9 @@ namespace SmartPaymentClientDemo
                 //if the sale was successful 
                 if (saleResponse.CardHostApprovedTransaction)
                 {
-                    //
+
                     //SALE VOID
-                    //
+
                     var sv = new SaleVoidRequest();
                     sv.Amount = 0.50m;
                     sv.CurrencyName = "RON";
@@ -104,6 +104,7 @@ namespace SmartPaymentClientDemo
                     var saleVoidResponse = client.SaleVoid(deviceUuid, sv);
                     Console.WriteLine("Sale void response:\r\n");
                     Console.WriteLine(saleVoidResponse.ToString());
+
 
                     //if the sale void was approved we launch the settlement report
                     if (saleVoidResponse.CardHostApprovedTransaction)
@@ -119,7 +120,7 @@ namespace SmartPaymentClientDemo
                     }
 
                 }
-    
+
             }
             catch (SmartPaymentException ex)
             {
